@@ -2,9 +2,9 @@ class gameBoard{
     private int[] pegs = new int [16]; //array that will hold the positions of th board
     gameBoard(){ //default constructor
     }
-    gameBoard(gameBoard rhs){
+    gameBoard(gameBoard oldBoard){
         for(int i=0;i<16;i++){
-            pegs[i]=rhs.getNumofMoves(i);
+            pegs[i]=oldBoard.getNumofMoves(i);
         }
     }
     void makeBoard(int i){ //makes the game board
